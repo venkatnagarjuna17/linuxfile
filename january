@@ -1,10 +1,14 @@
 pipeline {
     agent {label 'jenkinsfile'}
-    stages {
+        tools { 
+        maven 'maven' 
+        jdk 'jdk' 
+       stages {
         stage ('build stage'){
             steps {
                 echo "this is farook"
             }
         }
     }
+}
 }
