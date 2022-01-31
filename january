@@ -3,7 +3,7 @@ pipeline {
         tools { 
         maven 'maven' 
         jdk 'jdk' 
-       stages {
+       stages{
         stage ('build stage'){
             steps {
                 echo "this is farook"
