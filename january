@@ -1,8 +1,9 @@
 pipeline {
     agent {label 'jenkinsfile'}
         tools { 
-        Maven 'maven' 
-        Jdk 'jdk' 
+        maven 'maven' 
+        Jdk 'jdk'
+        }
        stages{
         stage ('build stage'){
             steps {
@@ -11,4 +12,4 @@ pipeline {
         }
     }
 }
-}
+
