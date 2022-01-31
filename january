@@ -1,0 +1,10 @@
+pipeline {
+    agent {label 'slavesuman'}
+    stages {
+        stage ('build stage'){
+            steps {
+                echo "this is farook"
+            }
+        }
+    }
+}
